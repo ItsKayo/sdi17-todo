@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+
+    <div class="wrapper">
+
+        <!-- Top header -->
+        <div class="header">
+            <h1>Things To Do</h1>
+        </div>
+        
+        <!-- Add new task -->
+        <div class="addNew">
+            <label>
+                <div>
+                    <h3>Create New Task:</h3>
+                    <form>
+                        <input class="addNew" id="addNewTextBox" type="text" name="addNew" placeholder="Add new task...">
+                        <button onclick="postItem()" class="addNew" id="addNewButton" type="submit" name="addTask">Add Task</button>
+                        <button onclick="clearTasks()" class="addNew" id="clear" type="submit" name="clear">Clear Tasks</button>
+                    </form>
+                </div>
+            </label>
+        </div>
+
+        <!-- Display list -->
+        <div class="list">
+            <ul>
+            </ul>
+        </div>
+        
+        <!-- Completed header
+        <div class="completedHeader">
+            <h1>Completed</h1>
+        </div> 
+
+         Display completed
+        <div class="completed">
+            <ul>
+            </ul>
+        </div>  -->
+
+    </div>
+
+    <script src="./code.js"></script>
+</body>
+
+</html>
